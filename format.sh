@@ -9,8 +9,8 @@ format () {
 }
 
 format '*.hs' ormolu
-format '*.sql' sqlformat -reindent -s -keywords upper -identifiers lower
 format '*.py' python3 -m isort --
 format '*.py' python3 -m black -- -S -q
+format '*.sql' sqlformat -reindent -s -keywords upper -identifiers lower
 format '*.yaml' yamlfmt -w
 format '*.yml' yamlfmt -w
