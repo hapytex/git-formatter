@@ -8,6 +8,7 @@ format () {
   fi
 }
 
+format '*.hs' ormolu
+format '*.sql' sqlformat -reindent -s -keywords upper -identifiers lower
 format '*.py' python -m isort
 format '*.py' python -m black -- -S -q
-format '*.hs' ormolu
