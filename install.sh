@@ -1,5 +1,3 @@
 #!/bin/bash
 
-pip install --upgrade black isort
-
-
+pip install --upgrade black isort yamlfmt
