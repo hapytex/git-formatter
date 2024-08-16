@@ -7,7 +7,7 @@ format () {
     git ls-files "$pat" | xargs -- "$@" --
   fi
 }
-format () {
+formatp () {
   opar="$1"
   shift
   pat="$1"
