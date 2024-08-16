@@ -13,7 +13,7 @@ formatp () {
   pat="$1"
   shift
   for f in `git ls-files --error-unmatch "$pat" 2>/dev/null`; do
-    "$@" -- "$f" "$opar" "$f"
+    "$@" "$opar" "$f" -- "$f"
   done
 }
 
